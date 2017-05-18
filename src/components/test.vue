@@ -15,6 +15,12 @@
             return {
                 msg: "我是home 组件"
             }
+        },
+        methods:{
+
+        },
+        mouted:function(){
+            console.log(11111111111)
         }
     }
 </script>
