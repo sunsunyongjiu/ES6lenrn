@@ -1,0 +1,70 @@
+.duration(@x){
+	transition-duration: @x;
+	-moz-transition-duration: @x; /* Firefox 4 */
+	-webkit-transition-duration: @x; /* Safari 和 Chrome */
+	-o-transition-duration: @x;
+}
+#app{
+	.header{
+		text-align: center;
+	}
+}
+.nav{
+  li{
+    background: rgb(65, 183, 111);
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    vertical-align: center;
+    a{
+    	color: white;
+    	text-decoration: none;
+    }
+  }
+  li:hover a{
+  	position: absolute;
+  	font-size: 30px;
+  	.duration(1s);
+	transform:translate(-20px);
+	text-shadow:2px 2px 4px #000000
+  }
+}
+.firstUl{
+  margin: 0;
+  padding: 0;
+  width:15vw;
+  height: 100%;
+  border-left: 2vw solid rgb(52,73,94);
+  box-sizing: border-box;
+  float: left;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 10vh;
+  background: rgb(65, 183, 111);
+  ul{
+    margin: 0;
+    padding: 0;
+    margin-left: 1vw;
+  }
+  li{
+    list-style: none;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+}
+.learnDiv{
+  width: 60vw;
+  box-sizing: border-box;
+  border: 1px solid black;
+  margin: 20px auto 0;
+  text-align: center;
+  padding-bottom: 2vw
+}
+.fatherBox{
+  overflow: hidden;
+}
+.changeWhite{
+  color: white
+}
