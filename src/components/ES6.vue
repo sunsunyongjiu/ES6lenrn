@@ -4,6 +4,7 @@
       <li><router-link  to="/path">首页</router-link></li>
       <li><router-link  to="/es6">Es6</router-link></li>
       <li><router-link  to="/Test">Test</router-link></li>
+      <li><router-link  to="/angular">Angular.js</router-link></li>
     </ul>
     <div class="fatherBox">
       <ul class="firstUl">
@@ -22,8 +23,7 @@
           {{title}}
         </h3>
         <br>
-        <div>
-          {{innerText}}
+        <div v-html="innerText">
         </div>
       </div>
     </div>
@@ -81,7 +81,7 @@ export default {
 @import '../assets/css/Es6.less';
   .nav{
     display: block;
-    width: 600px;
+    width: 800px;
     margin: 0 auto;
     overflow: hidden;
     text-align: center;

@@ -1,7 +1,6 @@
 <template>
     <div>
-        <h1>home</h1>
-        <p>{{msg}}</p>
+        <h1>{{msg}}</h1>
         <ul class="nav">
           <li><router-link  to="/path">首页</router-link></li>
           <li><router-link  to="/es6">Es6</router-link></li>
@@ -14,7 +13,7 @@
     export default {
         data () {
             return {
-                msg: "我是home 组件"
+                msg: "Angular!"
             }
         },
         methods:{

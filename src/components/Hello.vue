@@ -6,6 +6,7 @@
       <li><router-link  to="/path">首页<span class="none"></span></router-link></li>
       <li><router-link  to="/es6">Es6 <span class="none"></span></router-link></li>
       <li><router-link  to="/test">Test <span class="none"></span></router-link></li>
+      <li><router-link  to="/angular">Angular.js</router-link></li>
     </ul>
   </div>
 </template>
