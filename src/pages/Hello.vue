@@ -1,24 +1,27 @@
 <template>
   <div class="hello">
     <h1 class="header">{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul class="nav">
-      <li><router-link  to="/path">首页<span class="none"></span></router-link></li>
-      <li><router-link  to="/es6">Es6 <span class="none"></span></router-link></li>
-      <li><router-link  to="/test">Test <span class="none"></span></router-link></li>
-      <li><router-link  to="/angular">Angular.js</router-link></li>
-    </ul>
+    <my-nav uuu="我来了" :yes='yes'></my-nav>
   </div>
 </template>
 
 <script>
+import myNav from '../components/nav'
+import {state} from 'vuex'
 export default {
   name: 'hello',
   data () {
     return {
-      msg: 'ES6 学习笔记（ES6+Vue.js）'
+      msg: 'ES6 学习笔记（ES6+Vue.js）',
+      yes:false
     }
   },
+  components:{
+    myNav
+  },
+  mounted:function(){
+    console.log(this.$store)
+  }
 }
 </script>
 

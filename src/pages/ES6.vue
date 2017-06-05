@@ -1,11 +1,6 @@
 <template>
   <div>
-    <ul class="nav">
-      <li><router-link  to="/path">首页</router-link></li>
-      <li><router-link  to="/es6">Es6</router-link></li>
-      <li><router-link  to="/Test">Test</router-link></li>
-      <li><router-link  to="/angular">Angular.js</router-link></li>
-    </ul>
+    <my-nav></my-nav>
     <div class="fatherBox">
       <ul class="firstUl">
         <li v-for="(items,index) in firstTitles" @click="showList(index)">
@@ -31,6 +26,7 @@
 </template>
 
 <script>
+import myNav from '../components/nav'
 export default {
   data(){
     return{
@@ -41,6 +37,9 @@ export default {
       listExit:[],
       title:''
     }
+  },
+  components:{
+    myNav
   },
   mounted:function(){
     this.$http.get('../../static/learn.json').then((response) => {
@@ -79,17 +78,4 @@ export default {
 </script>
 <style lang='less'>
 @import '../assets/css/Es6.less';
-  .nav{
-    display: block;
-    width: 800px;
-    margin: 0 auto;
-    overflow: hidden;
-    text-align: center;
-    li{
-      list-style: none;
-      width: 200px;
-      float: left;
-      text-align: center
-    }
-  }
 </style>
