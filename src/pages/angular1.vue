@@ -7,21 +7,9 @@
             <li v-for="(items,index) in angularText">
               <span>{{index}}.</span>
               <span>{{items}}</span>
-              <!-- <ul class="secondUl" v-if="listExit[index]">
-                <li v-for='(item,index2) in tops[index]' @click="showText(index,index2)" :class="{changeWhite:item.display}">
-                  {{item.name}}
-                </li>
-              </ul> -->
+              
             </li>
           </ul>
-          <!-- <div class="learnDiv">
-            <h3>
-              {{title}}
-            </h3>
-            <br>
-            <div v-html="innerText">
-            </div>
-          </div> -->
         </div>
     </div>
 </template>
