@@ -27,6 +27,7 @@
 
 <script>
 import myNav from '../components/nav'
+import es6Text from '../assets/text/es6'
 export default {
   data(){
     return{
@@ -42,20 +43,26 @@ export default {
     myNav
   },
   mounted:function(){
-    this.$http.get('../../static/learn.json').then((response) => {
-        this.learnList=JSON.parse(response.bodyText)
-        this.firstTitles=JSON.parse(this.learnList.titles.replace(/'/g,'"'))
-        console.log(this.firstTitles)
-        console.log(JSON.parse(this.learnList.top.replace(/'/g,'"')))
-        this.tops=JSON.parse(this.learnList.top.replace(/'/g,'"'))
-        for(let i=0;i<this.firstTitles.length;i++){
-          this.listExit[i]=false;
-        }
-        console.log(this.tops)
+    console.log(es6Text)
+    this.firstTitles=es6Text.titles;
+    this.tops=es6Text.top
+
+    // 这是一段vue resource使用实例
+    // this.$http.get('../../static/learn.json').then((response) => {
+    //     this.learnList=JSON.parse(response.bodyText)
+    //     // this.firstTitles=JSON.parse(this.learnList.titles.replace(/'/g,'"'))
+    //     // console.log(this.firstTitles)
+    //     // console.log(JSON.parse(this.learnList.top.replace(/'/g,'"')))
+    //     this.tops=JSON.parse(this.learnList.top.replace(/'/g,'"'))
+    //     for(let i=0;i<this.firstTitles.length;i++){
+    //       this.listExit[i]=false;
+    //     }
+    //     console.log(this.tops)
         
-    }, (response) => {
-        // error callback
-    });
+    // }, (response) => {
+    //     // error callback
+    // });
+
   },
   methods:{
     showText:function(x,y){
