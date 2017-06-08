@@ -8,6 +8,7 @@
 				</dt>
 				<dd>
 					{{item.text}}
+					<a :href="item.link" target="_Blank">{{item.link}}</a>
 				</dd>
 			</dl>
 		</main>
