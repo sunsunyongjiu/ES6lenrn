@@ -76,7 +76,7 @@ export default {
       this.tops[x][y].display=true
     },
     showList:function(n){
-      this.listExit=Array(3)
+      this.listExit=Array(n)
       this.listExit.splice(n,1,!this.listExit[n])
       console.log(this.listExit)
     }
