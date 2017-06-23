@@ -6,6 +6,7 @@ const notes ={
 		{title:'angular2-4',link:'http://www.cnblogs.com/yitim/category/949322.html'},
 		{title:'tguide',link:'http://tguide.qq.com/main/index.htm'},
 		{title:'es6入门第二版',link:'http://es6.ruanyifeng.com/'},
+		{title:'nav内凹圆角',link:'http://www.tuicool.com/articles/BFbIzue'}
 	]
 }
 export default notes
