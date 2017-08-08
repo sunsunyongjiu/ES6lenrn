@@ -9,6 +9,8 @@ const notes ={
 		{title:'nav内凹圆角',link:'http://www.tuicool.com/articles/BFbIzue'},
 		{title:'skew倾斜',link:'http://www.cnblogs.com/mm2015/p/4812763.html'},
 		{title:'30分钟入门es6',link:'http://www.jianshu.com/p/ebfeb687eb70'},
+		{title:'vue-directive',link:'http://www.jb51.net/article/108047.htm'},
+		{title:'手机端client undefined解决方案',link:'http://blog.csdn.net/zzxboy1/article/details/65626605'},
 	]
 }
 export default notes
